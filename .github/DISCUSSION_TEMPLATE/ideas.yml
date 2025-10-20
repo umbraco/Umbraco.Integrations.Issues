@@ -1,0 +1,27 @@
+---
+labels: ["idea"]
+body:
+- type: dropdown
+  id: integration
+  attributes:
+    label: "Which integration is this feature related to?"
+    options:
+      - Umbraco.Cms.Integrations
+      - Umbraco.Forms.Integrations
+      - Umbraco.AuthorizedServices
+  validations:
+    required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Describe your idea"
+      placeholder: "What should this feature do? Why is it useful? Who would benefit?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: "Context"
+      description: "Explain the problem you're trying to solve, or how this idea fits in."
